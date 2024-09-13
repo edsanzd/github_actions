@@ -8,7 +8,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-        run: echoo "Hello world"  # Intentional error to test debug mode
+        run: echo "Hello world"  # Intentional error to test debug mode
       - name: multiline script
         run: |
           python3 -V
