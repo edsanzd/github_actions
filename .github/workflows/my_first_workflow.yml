@@ -8,13 +8,10 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-        run: echo "Hello world"
+        run: echoo "Hello world"  # Intentional error to test debug mode
       - name: multiline script
         run: |
           python3 -V
           touch my_file_with_workflow.py
           ls -l
-
-- name: echo a string
-  run: echoo "Hello world"  # 'echoo' is an invalid command
 
